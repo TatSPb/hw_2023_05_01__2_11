@@ -27,7 +27,7 @@ public class CalculatorController {
     @GetMapping("/plus")
     public String plus(@RequestParam(value = "num1", required = false) Integer a,
                        @RequestParam(value = "num2", required = false) Integer b) {
-        if (Objects.isNull(a) || Objects.isNull(b)){
+        if (Objects.isNull(a) || Objects.isNull(b)) {
             return "Оба параметра должны быть переданы!";
         }
         return buildResult(a, b, "+");
