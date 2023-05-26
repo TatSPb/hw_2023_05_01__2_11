@@ -19,6 +19,7 @@ public class CalculatorServiceParameterizedTest {
                 Arguments.of(0, 0, 0)
         );
     }
+
     public static Stream<Arguments> minusTestParams() {
         return Stream.of(
                 Arguments.of(1, 2, -1),
@@ -26,6 +27,7 @@ public class CalculatorServiceParameterizedTest {
                 Arguments.of(0, 0, 0)
         );
     }
+
     public static Stream<Arguments> multiplyTestParams() {
         return Stream.of(
                 Arguments.of(1, 2, 2),
@@ -42,10 +44,10 @@ public class CalculatorServiceParameterizedTest {
         );
     }
 
-    public static Stream<Arguments> divideNegativeTestParams(){
+    public static Stream<Arguments> divideNegativeTestParams() {
         return Stream.of(
-                Arguments.of(1,0),
-                Arguments.of(-1,0)
+                Arguments.of(1, 0),
+                Arguments.of(-1, 0)
         );
     }
 
