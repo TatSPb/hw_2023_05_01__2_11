@@ -1,8 +1,0 @@
-###
-GET localhost:1300/store/order/add?id=1&id=2&id=3
-
-###
-GET localhost:1300/store/order/add?id=4,5,6
-
-###
-GET localhost:1300/store/order/get
